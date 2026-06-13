@@ -1,5 +1,20 @@
 # Rollover Daily Todos
 
+> [!NOTE]
+> **This is a fork of [lumoe/obsidian-rollover-daily-todos](https://github.com/lumoe/obsidian-rollover-daily-todos).**
+> Its only purpose is to make the in-progress **v2.0** rewrite (TypeScript, modular) easy to install and test in Obsidian before it's released upstream. For the stable plugin, use the original.
+>
+> ### Install the v2.0 pre-release with BRAT
+> [BRAT](https://github.com/TfTHacker/obsidian42-brat) ("Beta Reviewers Auto-update Tool") installs plugins straight from a GitHub repo.
+>
+> 1. Install **BRAT** from Obsidian's Community Plugins, then enable it.
+> 2. Open the command palette and run **`BRAT: Add a beta plugin for testing`**.
+> 3. Enter this repo: `jayv/obsidian-rollover-daily-todos`
+> 4. Enable **"track pre-releases"** (this release is tagged `2.0.0-dev` as a pre-release), then click **Add Plugin**.
+> 5. Enable **Rollover Daily Todos** under Community Plugins.
+>
+> BRAT will keep it updated as new `2.0.x` pre-releases are published. ⚠️ This is a work in progress — see the release notes for features not yet ported from upstream `1.2.0`.
+
 ![build](https://github.com/lumoe/obsidian-rollover-daily-todos/actions/workflows/ci.yml/badge.svg)
 
 This Obsidian plugin will rollover any incomplete todo items from the previous daily note (could be yesterday, or a week ago) to today. This is triggered automatically when a new daily note is created via the internal `Daily notes` plugin, or the `Periodic Notes` plugin., It can also be run as a command from the Command Palette.
